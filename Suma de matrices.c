@@ -8,5 +8,8 @@ srand (time(NULL));
     scanf("%d", &filas);
     printf("Ingrese el número de columnas de la matriz: ");
     scanf("%d", &columnas);
-return 0;
+    printf("Matriz:\n");
+    int matriz[filas][columnas];
+    int matriz2[filas][columnas];
+    int sumatriz[filas][columnas];
 }
