@@ -19,4 +19,13 @@ srand (time(NULL));
         }
         printf("\n");
     }
+    printf("Matriz 2:\n");
+    for (int i = 0; i < filas; i++)
+    {
+          for (int j = 0; j < columnas; j++) {
+            matriz2[i][j]=rand()%100 + 1;
+            printf("%d\t", matriz2[i][j]);
+        }
+        printf ("\n");
+    }
 }
