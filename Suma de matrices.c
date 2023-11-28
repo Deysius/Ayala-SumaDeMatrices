@@ -8,7 +8,7 @@ srand (time(NULL));
     scanf("%d", &filas);
     printf("Ingrese el número de columnas de la matriz: ");
     scanf("%d", &columnas);
-    printf("Matriz:\n");
+    printf("Primera Matriz:\n");
     int matriz[filas][columnas];
     int matriz2[filas][columnas];
     int sumatriz[filas][columnas];
@@ -19,7 +19,7 @@ srand (time(NULL));
         }
         printf("\n");
     }
-    printf("Matriz 2:\n");
+    printf("Segunda Matriz:\n");
     for (int i = 0; i < filas; i++)
     {
           for (int j = 0; j < columnas; j++) {
@@ -28,4 +28,14 @@ srand (time(NULL));
         }
         printf ("\n");
     }
+    printf("Suma de matrices:\n");
+    for (int i = 0; i < filas; i++)
+    {
+          for (int j = 0; j < columnas; j++) {
+            sumatriz[i][j]=matriz[i][j]+matriz2[i][j];
+            printf("%d\t", sumatriz[i][j]);
+        }
+        printf ("\n");
+    }
+return 0;
 }
